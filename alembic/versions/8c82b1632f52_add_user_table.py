@@ -26,9 +26,7 @@ def upgrade():
                     sa.PrimaryKeyConstraint('id'),
                     sa.UniqueConstraint('email')
                     )
-    pass
 
 
 def downgrade():
     op.drop_table('users')
-    pass
